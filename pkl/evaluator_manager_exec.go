@@ -25,8 +25,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/apple/pkl-go/pkl/internal"
-	"github.com/apple/pkl-go/pkl/internal/msgapi"
+	"cedpm.org/internal"
+	"cedpm.org/pkl-go/pkl/internal/msgapi"
 	"github.com/vmihailenco/msgpack/v5"
 )
 

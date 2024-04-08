@@ -21,8 +21,7 @@ import (
 	"log"
 	"net/url"
 	"sync"
-
-	"github.com/apple/pkl-go/pkl/internal/msgapi"
+	"cedpm.org/pkl-go/pkl/internal/msgapi"
 )
 
 // Evaluator is an interface for evaluating Pkl modules.

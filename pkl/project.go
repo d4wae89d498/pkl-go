@@ -3,7 +3,7 @@ package pkl
 import (
 	"context"
 
-	"github.com/apple/pkl-go/pkl/internal"
+	"cedpm.org/internal"
 )
 
 // needed for mapping Project.RawDependencies, because the value is defined as any.
@@ -18,12 +18,16 @@ type Project struct {
 	Package          *ProjectPackage           `pkl:"package"`
 	EvaluatorSetings *ProjectEvaluatorSettings `pkl:"evaluatorSettings"`
 	Tests            []string                  `pkl:"tests"`
+	Before           map[string][]string       `pkl:"before"`
+	On               map[string][]string       `pkl:"on"`
+	After            map[string][]string       `pkl:"after"`
+	Paths            []string                  `pkl:"paths"`
 
 	// internal field; use Project.Dependencies instead.
 	// values are either *Project or *ProjectRemoteDependency
-	RawDependencies map[string]any `pkl:"dependencies"`
+	RawDependencies map[string]any             `pkl:"dependencies"`
 
-	dependencies *ProjectDependencies `pkl:"-"`
+	dependencies *ProjectDependencies          `pkl:"-"`
 }
 
 // ProjectPackage is the go representation of pkl.Project#Package.

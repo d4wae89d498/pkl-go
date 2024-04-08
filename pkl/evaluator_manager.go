@@ -21,7 +21,7 @@ import (
 	"log"
 	"sync"
 
-	"github.com/apple/pkl-go/pkl/internal/msgapi"
+	"cedpm.org/pkl-go/pkl/internal/msgapi"
 )
 
 var empty = struct{}{}

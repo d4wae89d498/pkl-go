@@ -22,7 +22,7 @@ import (
 	"path"
 	"strings"
 
-	"github.com/apple/pkl-go/pkl/internal/msgapi"
+	"cedpm.org/pkl-go/pkl/internal/msgapi"
 )
 
 // EvaluatorOptions is the set of options available to control Pkl evaluation.
